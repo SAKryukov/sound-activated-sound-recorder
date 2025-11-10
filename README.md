@@ -4,4 +4,4 @@
 
 [Original publication](https://sakryukov.github.io/publications/2014-09-03.Practical-Sound-Recorder-with-Sound-Activation.html)
 
-[Earlier CodeProject publication, v.2.0](https://www.codeproject.com/articles/Practical-Sound-Recorder-with-Sound-Activation)
+[Earlier CodeProject original publication, v.2.0, .NET Framework verions](https://www.codeproject.com/articles/Practical-Sound-Recorder-with-Sound-Activation)
