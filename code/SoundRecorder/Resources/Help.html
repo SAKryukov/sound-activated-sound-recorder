@@ -1,0 +1,50 @@
+﻿<html>
+    <head>
+        <title>Sound Recorder</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="generator" content="SAEditU Unicode editor, XHTML plug-in, (c) 2004, 2007 by S A Kryukov, http://www.SAKryukov.org" />
+        <style type="text/css">
+            * { font-family: sans-serif; }
+            p.title { font-size:160%; text-align: center; }
+            img { width: 10em; }
+        </style>
+    </head>
+<body>
+
+<p class="title">Practical Sound Recorder with Sound Activation</p>
+<p><img src="IconMain.ico"></img></p>
+
+<h4>No need to use &ldquo;Save As&rdquo; or manually enter file names</h4>
+
+<p>A musician holds a saxophone with both hands. A violin&hellip; A guitar&hellip; This person doesn't want to reach for the computer and do too much to get each record.</p>
+
+<p>With this Sound Recorder, the recording can be stopped and saved in just one hit, on just one key — the wide, easy-to-reach blankspace. It will (again, optionally) restart the recording and save the previous one. Hence, the file names are never typed. They are created based on а preliminary defined base file name with sequential numbers. The application prevents overriding existing audio files.</p>
+
+<h4>Sound activation</h4>
+
+<p>Sound activation is optional. It is determined by a threshold positioned on the sound volume indicator control. It is done visually. When the sound volume goes beyond the vertical bar (which is set to a positive infinite value and not visible at startup, but can be moved onto the volume indicator), the recoding is activated. The state is shown by the blinking indicator, a digital watch showing &ldquo;pure&rdquo; (without pauses) elapsed time.
+<p>In a nutshell, that's all. The basic operation is self-explanatory.</p>
+
+<h4>Options</h4>
+
+<p>Two controls named “Sound Activation” and “Output Detail” show the options. They are not changed often and don’t have to be shown during repetitive recordings. Note that the sound activation threshold is kept handy, because adjusting it several times could be needed.</p>
+
+<p>The important sound activation option under the top expander shows an mportant parameter: the delay between detecting of the activating sound and activation of recording. This is needed to cut out the sound used for activation from the record. This technique works fairly well, and the default value of 200 ms works reasonably well, at least for the first approximation.</p>
+
+<p>Note that the options are written in the configuration file, which is not placed in the per-user application data directory. Instead, the user saves the file in a directory of one's choice and the preferences can be loaded later. Importantly, the base file can have the directory ".\", which means that the files can be saved to any current directory, whatever it is.</p>
+<p>The preferences are loaded automatically. It happens in the following priority:</p>
+<ol><li>If the preference file name is given in the command line and exists, this file is loaded. It is convenient to make batch files to start the application with different preferences.</li>
+<li>Otherwise, if the file with the &ldquo;Default&rdquo; name is found in the working directory before starting of the application, it will be loaded.</li>
+<li>Otherwise, if the file with the &ldquo;Default&rdquo; name is found in the executable directory of the application, it is loaded.</li></ol>
+
+<h4>Volume Indicator Adjustment</h4>
+
+<p>The volume indicator adjustment can be done after a recording is stopped. It sets the maximum value of the volume indicator to the maximum volume observed during the last recording. It does not affect audio data.</p>
+
+
+<p><a href="https://sakryukov.github.io/publications/2014-09-03.Practical-Sound-Recorder-with-Sound-Activation.html">Original publication</a></p>
+
+<p><a href="https://www.codeproject.com/articles/Practical-Sound-Recorder-with-Sound-Activation">Earlier CodeProject original publication, v.2.0, .NET Framework version</a></p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!--
+    Copyright (C) 2025 by Sergey A Kryukov
+    https://www.SAKryukov.org
+    https://github.com/SAKryukov
+    https://www.codeproject.com/Members/SAKryukov
+-->
+
+<Project>
+ 
+  <PropertyGroup> <!-- customize:  -->
+
+    <TargetFramework>net9.0</TargetFramework>
+    <CustomUnifiedVersion>3.2.0.0</CustomUnifiedVersion>
+    <!-- can be alpha, beta, RC1, RC2, etc.: -->
+    <CustomInformationalVersionSuffix></CustomInformationalVersionSuffix>
+
+    <Copyright>Copyright © 2014, 2025 Sergey A Kryukov</Copyright>
+    <Product>MediaSoft</Product>
+    <Description>HTTP3Downloader, YouTubeDowloader, SyncRaw for photographs</Description>
+    <Company>SA</Company>
+    <AssemblyTitle>$(Product)</AssemblyTitle>
+
+  </PropertyGroup>
+
+  <PropertyGroup> <!-- customize:  -->
+    <RootNamespace>SA</RootNamespace>
+  </PropertyGroup>
+
+</Project>

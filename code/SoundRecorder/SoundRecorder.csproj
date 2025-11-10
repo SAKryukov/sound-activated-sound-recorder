@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>SoundRecorder</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <TargetFramework>$(TargetFramework)-windows</TargetFramework>
+    <ApplicationIcon>Resources/IconMain.ico</ApplicationIcon>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,19 @@
+<!--
+Sound Recorder
+
+Copyright (C) by Sergey A Kryukov, 2014, 2025
+
+https://www.SAKryukov.org
+https://sakryukov.github.io/publications/2014-09-03.Practical-Sound-Recorder-with-Sound-Activation.html
+-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <Style x:Key="windowFont" TargetType="{x:Type Window}">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily" Value="Verdana" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,62 @@
+﻿<!--
+Sound Recorder
+
+Copyright (C) by Sergey A Kryukov, 2014, 2025
+
+https://www.SAKryukov.org
+https://sakryukov.github.io/publications/2014-09-03.Practical-Sound-Recorder-with-Sound-Activation.html
+-->
+
+<FrameworkContentElement x:Class="SoundRecorder.Resources.HelpSource"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:system="clr-namespace:System;assembly=mscorlib"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FrameworkContentElement.Resources>
+        <system:String x:Key="{x:Type system:String}">
+            &lt;html&gt;
+            &lt;head&gt;
+        &lt;title&gt;Sound Recorder&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+        &lt;meta name="generator" content="SAEditU Unicode editor, XHTML plug-in, (c) 2004, 2007 by S A Kryukov, http://www.SAKryukov.org" /&gt;
+        &lt;style type="text/css"&gt;
+            * { font-family: sans-serif; }
+            p.title { font-size:160%; text-align: center; }
+            img { width: 10em; }
+        &lt;/style&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+
+&lt;p class="title"&gt;Practical Sound Recorder with Sound Activation&lt;/p&gt;
+
+&lt;h4&gt;No need to use &amp;ldquo;Save As&amp;rdquo; or manually enter file names&lt;/h4&gt;
+
+&lt;p&gt;A musician holds a saxophone with both hands. A violin&amp;hellip; A guitar&amp;hellip; This person doesn't want to reach for the computer and do too much to get each record.&lt;/p&gt;
+
+&lt;p&gt;With this Sound Recorder, the recording can be stopped and saved in just one hit, on just one key — the wide, easy-to-reach blankspace. It will (again, optionally) restart the recording and save the previous one. Hence, the file names are never typed. They are created based on а preliminary defined base file name with sequential numbers. The application prevents overriding existing audio files.&lt;/p&gt;
+
+&lt;h4&gt;Sound activation&lt;/h4&gt;
+
+&lt;p&gt;Sound activation is optional. It is determined by a threshold positioned on the sound volume indicator control. It is done visually. When the sound volume goes beyond the vertical bar (which is set to a positive infinite value and not visible at startup, but can be moved onto the volume indicator), the recoding is activated. The state is shown by the blinking indicator, a digital watch showing dquo;ldquo;puredquo;rdquo; (without pauses) elapsed time.
+&lt;p&gt;In a nutshell, that's all. The basic operation is self-explanatory.&lt;/p&gt;
+
+&lt;h4&gt;Options&lt;/h4&gt;
+
+&lt;p&gt;Two controls named “Sound Activation” and “Output Detail” show the options. They are not changed often and don’t have to be shown during repetitive recordings. Note that the sound activation threshold is kept handy, because adjusting it several times could be needed.&lt;/p&gt;
+
+&lt;p&gt;The important sound activation option under the top expander shows an mportant parameter: the delay between detecting of the activating sound and activation of recording. This is needed to cut out the sound used for activation from the record. This technique works fairly well, and the default value of 200 ms works reasonably well, at least for the first approximation.&lt;/p&gt;
+
+&lt;p&gt;Note that the options are written in the configuration file, which is not placed in the per-user application data directory. Instead, the user saves the file in a directory of one's choice and the preferences can be loaded later. Importantly, the base file can have the directory ".\", which means that the files can be saved to any current directory, whatever it is.&lt;/p&gt;
+&lt;p&gt;The preferences are loaded automatically. It happens in the following priority:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;If the preference file name is given in the command line and exists, this file is loaded. It is convenient to make batch files to start the application with different preferences.&lt;/li&gt;
+&lt;li&gt;Otherwise, if the file with the &amp;ldquo;Default&amp;rdquo; name is found in the working directory before starting of the application, it will be loaded.&lt;/li&gt;
+&lt;li&gt;Otherwise, if the file with the &amp;ldquo;Default&amp;rdquo; name is found in the executable directory of the application, it is loaded.&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h4&gt;Volume Indicator Adjustment&lt;/h4&gt;
+
+&lt;p&gt;The volume indicator adjustment can be done after a recording is stopped. It sets the maximum value of the volume indicator to the maximum volume observed during the last recording. It does not affect audio data.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </system:String>
+    </FrameworkContentElement.Resources>
+</FrameworkContentElement>

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"dotnet.completion.showCompletionItemsFromUnimportedNamespaces": false,
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true
+	}
+}
