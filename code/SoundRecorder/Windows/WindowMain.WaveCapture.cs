@@ -1,4 +1,4 @@
-﻿    /*
+/*
 Sound Recorder
 
 Copyright (C) by Sergey A Kryukov, 2014, 2025
@@ -88,7 +88,7 @@ namespace SoundRecorder.Windows {
             double existingMaximum = double.NegativeInfinity;
             bool measuringMaximumLevel, exit;
             readonly Thread thread;
-            readonly Lock lockObject = new();
+            readonly System.Object lockObject = new();
         } //class IndicatorThreadWrapper
 
         void SetupIndicator() {

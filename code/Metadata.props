@@ -9,7 +9,7 @@
  
   <PropertyGroup> <!-- customize:  -->
 
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <CustomUnifiedVersion>3.2.0.0</CustomUnifiedVersion>
     <!-- can be alpha, beta, RC1, RC2, etc.: -->
     <CustomInformationalVersionSuffix></CustomInformationalVersionSuffix>
